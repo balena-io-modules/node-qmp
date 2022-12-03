@@ -1,11 +1,8 @@
 {
   "name": "examples",
   "version": "1.0.0",
-  "description": "",
-  "main": "demo.js",
-  "author": "",
   "license": "ISC",
   "dependencies": {
-    "@jakogut/node-qmp": "file:.."
+    "@jakogut/node-qmp": "^0.0.2"
   }
 }
