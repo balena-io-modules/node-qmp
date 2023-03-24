@@ -69,7 +69,11 @@ export class Client extends EventEmitter {
 		}
 
 		if (QMP_EVENT_KEY in msg) {
-			this.emit(msg.event as string);
+			Object.entries(msg).map( ([k, v]) => {
+				if ( k === 'event') {
+					this.emit((v as string).toLowerCase(), JSON.stringify(msg))
+				}
+			})
 		}
 
 		if (QMP_ID_KEY in msg) {
