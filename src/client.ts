@@ -24,8 +24,8 @@ export class Client extends EventEmitter {
 		this.on('message', this.onMessage);
 	}
 
-	connect(addr: string): void {
-		this.sock = net.createConnection(addr);
+	connect(addr: string | number): void {
+		this.sock = net.createConnection(addr as any);
 		this.sock.setEncoding('utf8');
 		this.sock.on('data', this.onData.bind(this));
 		this.sock.on('end', this.onClose.bind(this));
@@ -69,7 +69,11 @@ export class Client extends EventEmitter {
 		}
 
 		if (QMP_EVENT_KEY in msg) {
-			this.emit(msg.event as string);
+			Object.entries(msg).map( ([k, v]) => {
+				if ( k === 'event') {
+					this.emit((v as string).toLowerCase(), JSON.stringify(msg))
+				}
+			})
 		}
 
 		if (QMP_ID_KEY in msg) {
