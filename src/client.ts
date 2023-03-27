@@ -24,8 +24,8 @@ export class Client extends EventEmitter {
 		this.on('message', this.onMessage);
 	}
 
-	connect(addr: string): void {
-		this.sock = net.createConnection(addr);
+	connect(addr: string | number): void {
+		this.sock = net.createConnection(addr as any);
 		this.sock.setEncoding('utf8');
 		this.sock.on('data', this.onData.bind(this));
 		this.sock.on('end', this.onClose.bind(this));
