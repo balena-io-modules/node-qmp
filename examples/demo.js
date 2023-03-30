@@ -1,4 +1,4 @@
-const qmp = require('@jakogut/node-qmp');
+const qmp = require('node-qmp');
 
 const client = new qmp.Client();
 
