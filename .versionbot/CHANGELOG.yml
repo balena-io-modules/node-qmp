@@ -1,0 +1,42 @@
+- commits:
+    - subject: Add flowzone support
+      hash: b5298ae6296346ef55068281419f3b657ac918f9
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Joseph Kogut <joseph@balena.io>
+        signed-off-by: Joseph Kogut <joseph@balena.io>
+      author: Joseph Kogut
+    - subject: rename package @jakogut/node-qmp -> node-qmp
+      hash: 9b93d061aa2ca6c0ffd671177c908c805eb3c3ff
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Joseph Kogut <joseph@balena.io>
+        signed-off-by: Joseph Kogut <joseph@balena.io>
+      author: Joseph Kogut
+    - subject: "client: Allow connections over TCP or local socket."
+      hash: 177fd056cc43e8855253b1dd1944c6af8aa76285
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+    - subject: "client: fix upstream emit emission"
+      hash: a25cd00198e3e67f3b34054068a3b766e87e9ba2
+      body: |
+        The format for the expected emitter object includes a name followed
+        by other data.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+  version: 0.0.2
+  title: ""
+  date: 2023-03-30T17:15:20.758Z

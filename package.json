@@ -1,31 +1,34 @@
 {
-	"name": "node-qmp",
-	"version": "0.0.3",
-	"files": [
-		"lib/**/*"
-	],
-	"scripts": {
-		"clean": "rm -rf ./lib",
-		"build": "npm run clean && npm run build:esm && npm run build:cjs",
-		"build:esm": "tsc -p ./configs/tsconfig.esm.json && mv lib/esm/index.js lib/esm/index.mjs",
-		"build:cjs": "tsc -p ./configs/tsconfig.cjs.json",
-		"prepack": "npm run build"
-	},
-	"types": "./lib/cjs/types/index.ts",
-	"main": "./lib/cjs/index.js",
-	"exports": {
-		".": {
-			"import": {
-				"types": "./lib/esm/types/index.d.ts",
-				"default": "./lib/esm/index.mjs"
-			},
-			"require": {
-				"types": "./lib/cjs/types/index.d.ts",
-				"default": "./lib/cjs/index.js"
-			}
-		}
-	},
-	"devDependencies": {
-		"@types/node": "^18.11.10"
-	}
+  "name": "node-qmp",
+  "version": "0.0.2",
+  "files": [
+    "lib/**/*"
+  ],
+  "scripts": {
+    "clean": "rm -rf ./lib",
+    "build": "npm run clean && npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc -p ./configs/tsconfig.esm.json && mv lib/esm/index.js lib/esm/index.mjs",
+    "build:cjs": "tsc -p ./configs/tsconfig.cjs.json",
+    "prepack": "npm run build"
+  },
+  "types": "./lib/cjs/types/index.ts",
+  "main": "./lib/cjs/index.js",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./lib/esm/types/index.d.ts",
+        "default": "./lib/esm/index.mjs"
+      },
+      "require": {
+        "types": "./lib/cjs/types/index.d.ts",
+        "default": "./lib/cjs/index.js"
+      }
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.10"
+  },
+  "versionist": {
+    "publishedAt": "2023-03-30T17:15:20.816Z"
+  }
 }
