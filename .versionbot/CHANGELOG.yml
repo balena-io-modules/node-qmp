@@ -1,4 +1,17 @@
 - commits:
+    - subject: "examples: update import"
+      hash: 1eaf24fd33591a6a45323324eb29e58fabbe4d46
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Joseph Kogut <joseph@balena.io>
+        signed-off-by: Joseph Kogut <joseph@balena.io>
+      author: Joseph Kogut
+  version: 0.0.4
+  title: ""
+  date: 2023-03-30T18:48:46.942Z
+- commits:
     - subject: Create initial tests
       hash: 864ff003291106d31617197f47f8dd4dc78c4593
       body: ""
