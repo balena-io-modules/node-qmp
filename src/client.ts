@@ -24,12 +24,14 @@ export class Client extends EventEmitter {
 		this.on('message', this.onMessage);
 	}
 
-	connect(addr: string | number): void {
-		this.sock = net.createConnection(addr as any);
-		this.sock.setEncoding('utf8');
-		this.sock.on('data', this.onData.bind(this));
-		this.sock.on('end', this.onClose.bind(this));
-		this.sock.on('error', (err) => { this.emit('error', err); })
+	connect(addr: string | number): Promise<void> {
+		return new Promise((resolve, reject) => {
+			this.sock = net.createConnection(addr as any, resolve);
+			this.sock.setEncoding('utf8');
+			this.sock.on('data', this.onData.bind(this));
+			this.sock.on('end', this.onClose.bind(this));
+			this.sock.on('error', reject);
+		});
 	}
 
 	onData(data: string): void {
