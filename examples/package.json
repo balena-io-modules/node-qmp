@@ -3,6 +3,6 @@
   "version": "1.0.0",
   "license": "ISC",
   "dependencies": {
-    "@jakogut/node-qmp": "^0.0.2"
+    "node-qmp": "^0.0.3"
   }
 }
