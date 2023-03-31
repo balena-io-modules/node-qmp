@@ -1,4 +1,4 @@
-const qmp = require('node-qmp');
+const qmp = require('@balena/node-qmp');
 
 const client = new qmp.Client();
 

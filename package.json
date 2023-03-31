@@ -1,5 +1,5 @@
 {
-  "name": "node-qmp",
+  "name": "@balena/node-qmp",
   "version": "0.0.4",
   "description": "Library for interfacing with QEMU using QMP protocol",
   "author": "Balena.io Ltd <hello@balena.io>",
