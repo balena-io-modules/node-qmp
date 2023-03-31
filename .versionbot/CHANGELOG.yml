@@ -1,4 +1,17 @@
 - commits:
+    - subject: Rename package w/ @balena scope
+      hash: c921a7fb6db2c10db5cfdeb6d4fc8fef0f73da11
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Joseph Kogut <joseph@balena.io>
+        signed-off-by: Joseph Kogut <joseph@balena.io>
+      author: Joseph Kogut
+  version: 0.0.5
+  title: ""
+  date: 2023-03-31T17:13:29.825Z
+- commits:
     - subject: "examples: update import"
       hash: 1eaf24fd33591a6a45323324eb29e58fabbe4d46
       body: ""
