@@ -1,6 +1,6 @@
 {
   "name": "@balena/node-qmp",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Library for interfacing with QEMU using QMP protocol",
   "author": "Balena.io Ltd <hello@balena.io>",
   "contributors": [
@@ -41,6 +41,6 @@
     "jest": "^29.5.0"
   },
   "versionist": {
-    "publishedAt": "2023-03-31T17:13:29.914Z"
+    "publishedAt": "2023-12-19T22:08:16.978Z"
   }
 }
